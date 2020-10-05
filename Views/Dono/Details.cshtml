@@ -1,0 +1,58 @@
+﻿@model Cad_Pet.Models.DonoModel
+
+@{
+    ViewBag.Title = "Detailhes";
+}
+
+<h2>Detalhes</h2>
+
+<div>
+    <h4>Dono</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Nome)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Nome)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Email)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Email)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Telefone)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Telefone)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Data_Cad)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Data_Cad)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Descr_End)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Descr_End)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Editar", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Voltar", "Index")
+</p>

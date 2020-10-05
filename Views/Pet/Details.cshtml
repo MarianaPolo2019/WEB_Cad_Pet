@@ -1,0 +1,66 @@
+﻿@model Cad_Pet.Models.PetModel
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Detalhes</h2>
+
+<div>
+    <h4>Pet</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Nome_Pet)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Nome_Pet)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Tipo_Pet)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Tipo_Pet)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Sexo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Sexo)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Raca)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Raca)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Porte)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Porte)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DonoId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DonoId)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Editar", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Voltar", "Index")
+</p>
